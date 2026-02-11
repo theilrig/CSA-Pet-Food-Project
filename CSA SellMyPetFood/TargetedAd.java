@@ -1,23 +1,15 @@
 /*
  * Problem 2.3.1 Sell My Pet Food
  */
-Public class TargetedAd {
-      public static void (String[] args)
-      {
-        DataCollector collector = new DataCollector();
-        collector.setData("socialMediaPostsSmall.txt", "targetWords.txt");
-        String targetedUsers = "";
-        String post = collector.getNextPost();
-        
-        
-      }
-      
-    }
-     
-  }
+public class TargetedAd {
+
+  public static void main(String[] args)
+  {
     /*  
      * TODO:
-
+     * PREPARATION WORK
+     * (1) Create a file called targetWords.txt. Populate this file with words on each line that
+     *     you think would determine if a user is a dog or cat owner.
      * 
      * PROGRAMMING
      * (2) Create a new DataCollector object and set the data to "socialMediaPostsSmall.txt" and "targetWords.txt"
@@ -41,9 +33,25 @@ Public class TargetedAd {
 
 
     /* your code here */
-    
+        DataCollector collector = new DataCollector();
+        collector.setData("socialMediaPostsSmall.txt", "targetWords.txt");
+        String targetedUsers = "";
+        String post = collector.getNextPost();
+        
+        
+        // Line 42- 45 Step no. 5
+        String adMessage = "Unleash your pet; with this firey high protein lunch";
+        collector.prepareAdvertisement("targetedAds.txt", targetedUsers, adMessage);
+        System.out.println("Targeted wolf-food ads generated for: " + targetedUsers);
+        
+        
+        
+        }
+        
+      }
+      
+    }
      
   }
 
 }
-

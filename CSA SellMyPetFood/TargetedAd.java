@@ -1,10 +1,20 @@
 /*
  * Problem 2.3.1 Sell My Pet Food
  */
-public class TargetedAd {
-
-  public static void main(String[] args)
-  {
+Public class TargetedAd {
+      public static void (String[] args)
+      {
+        DataCollector collector = new DataCollector();
+        collector.setData("socialMediaPostsSmall.txt", "targetWords.txt");
+        String targetedUsers = "";
+        String post = collector.getNextPost();
+        
+        
+      }
+      
+    }
+     
+  }
     /*  
      * TODO:
 
@@ -36,3 +46,4 @@ public class TargetedAd {
   }
 
 }
+

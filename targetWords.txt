@@ -6,7 +6,7 @@ kneading
 purring
 mouser
 feline
-calico
+mittens
 tabby
 crepuscular
 pouncing
@@ -22,3 +22,5 @@ spraying
 heat
 claws
 night-vision
+furniture
+

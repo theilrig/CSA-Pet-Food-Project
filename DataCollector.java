@@ -146,4 +146,8 @@ public class DataCollector
     for (String word : this.targetWords)
       System.out.println(word);
   }
+  
+  public String addName(String currentList, String newName){
+    return currentList + newName + ""
+  }
 }

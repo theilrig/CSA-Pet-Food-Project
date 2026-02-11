@@ -33,16 +33,21 @@ public class TargetedAd {
 
 
     /* your code here */
+    public class TargetedAd {
+      public static void (String[] args)
+      {
         DataCollector collector = new DataCollector();
         collector.setData("socialMediaPostsSmall.txt", "targetWords.txt");
         String targetedUsers = "";
         String post = collector.getNextPost();
         
         
-        // Line 42- 45 Step no. 5
+       
+        
+        // Line 45- 48 Step no. 5
         String adMessage = "Unleash your pet; with this firey high protein lunch";
         collector.prepareAdvertisement("targetedAds.txt", targetedUsers, adMessage);
-        System.out.println("Targeted wolf-food ads generated for: " + targetedUsers);
+        System.out.println("Targeted wolf-food ads created for: " + targetedUsers);
         
         
         

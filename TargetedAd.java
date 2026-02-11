@@ -1,7 +1,4 @@
-/*
- * Problem 2.3.1 Sell My Pet Food
- */
-public class TargetedAd {
+{
 
   public static void main(String[] args)
   {
@@ -35,6 +32,12 @@ public class TargetedAd {
     /* your code here */
     DataCollector object = new DataCollector()
     object.setData("socialMediaPosts.txt", "targetWords.txt");
+    
+    public String toEqual(){
+      if (post == targetWord){
+        list.addName
+      }
+    }
     
   
      

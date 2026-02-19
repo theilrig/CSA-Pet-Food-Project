@@ -1,28 +1,24 @@
 public class TargetedAd {
 
+
+    
     public static void main(String[] args) {
 
         DataCollector collector = new DataCollector();
-        collector.setData("socialMediaPosts.txt", "targetWords.txt");
+        collector.setData("socialMediaPostsSmall.txt", "targetWords.txt");
 
-        String targetedUsers =  "";
-        String post  = collector.getNextPost();
+        String targetedUsers = "";
+        String post = collector.getNextPost();
 
         while (!post.equals("NONE")) {
 
-            String username = post.substring(0, post.indexOf(" "));
-            String lowerPost = post.toLowerCase();
+            
 
             String targetWord = collector.getNextTargetWord();
-//handlingg
+
             while (!targetWord.equals("NONE")) {
 
-                if (lowerPost.indexOf(targetWord.toLowerCase()) != -1) {
-
-                    if (!targetedUsers.contains(username)) {
-                        targetedUsers += username + " ";
-                    }
-                }
+                targetedUsers = toEqual(post.toLowerCase(), targetWord.toLowerCase(), targetedUsers);
 
                 targetWord = collector.getNextTargetWord();
             }
@@ -30,9 +26,29 @@ public class TargetedAd {
             post = collector.getNextPost();
         }
 
-        String advertisement = "feed ur wolf";
-        collector.prepareAdvertisement("targetedAds.txt", targetedUsers.trim(), advertisement);
+        String adMessage = "fed the wolve s";
+        collector.prepareAdvertisement("targetedAds.txt", targetedUsers.trim(), adMessage);
 
-        System.out.println("Targeted ads created for: " +   targetedUsers.trim());
+        System.out.println("Targeted ads created for: " + targetedUsers.trim());
+    }
+
+    public static String addName(String currentList, String newName) {
+        if (!currentList.contains(newName)) {
+            return currentList + newName + " ";
+        }
+        return currentList;
+    }
+
+    public static String toEqual(String post, String targetWord, String list) {
+        if (post.indexOf(targetWord) != -1) {
+            list = addName(list, getId(post));
+        }
+        return list;
+    }
+
+    
+
+    public static String getId(String post) {
+        return post.substring(0, post.indexOf(" "));
     }
 }

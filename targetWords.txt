@@ -1,7 +1,7 @@
 pack-leader
 alpha
 howling
-scent-marking
+wolf
 apex-predator
 canis-lupus
 territorial
@@ -19,7 +19,7 @@ tracking
 animal
 muzzle
 howl-frequency
-ungulate
+treats
 predator
 carnivore
 fang

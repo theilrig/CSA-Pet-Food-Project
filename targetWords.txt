@@ -22,4 +22,4 @@ howl-frequency
 treats
 predator
 carnivore
-fang
+fanged

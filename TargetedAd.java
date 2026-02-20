@@ -3,13 +3,8 @@ public class TargetedAd {
     public static void main(String[] args) {
 
         DataCollector collector = new DataCollector();
-        // Uses small file to develop and test out thealgorithm
-        collector.setData("socialMediaPostsSmall.txt", "targetWords.txt");
-         /*
-         * STEP 6: 
-         * After checking the algorithm works correctly with  "socialMediaPostsSmall.txt", change the line above to: collector.setData("socialMediaPosts.txt", "targetWords.txt");
-         * This will run the same algorithm on the full dataset
-         */
+        //uses big file in final verison, takes anyhting wolf or dog related 
+        collector.setData("socialMediaPosts.txt", "targetWords.txt");
 
         
         String targetedUsers = "";
@@ -31,7 +26,7 @@ public class TargetedAd {
             post = collector.getNextPost();
         }
 
-        String adMessage = "fed the wolves, by coming to us";
+        String adMessage = "feed the wolves - even the puppies that could be wolves, by coming to us!!";
         collector.prepareAdvertisement("targetedAds.txt", targetedUsers.trim(), adMessage);
 
         System.out.println("Targeted ads created for: " + targetedUsers.trim());

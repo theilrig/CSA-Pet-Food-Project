@@ -15,7 +15,7 @@ public class TargetedAd {
             
 
             String targetWord = collector.getNextTargetWord();
-
+//iteraiton in requirement 2 part 1
             while (!targetWord.equals("NONE")) {
 
                 targetedUsers = toEqual(post.toLowerCase(), targetWord.toLowerCase(), targetedUsers);
@@ -27,6 +27,7 @@ public class TargetedAd {
         }
 
         String adMessage = "feed the wolves - even the puppies that could be wolves, by coming to us!!";
+        //file generation in requirement 2 part 2 
         collector.prepareAdvertisement("targetedAds.txt", targetedUsers.trim(), adMessage);
 
         System.out.println("Targeted ads created for: " + targetedUsers.trim());

@@ -26,7 +26,7 @@ public class TargetedAd {
             post = collector.getNextPost();
         }
 
-        String adMessage = "fed the wolve s";
+        String adMessage = "fed the wolves, by coming to us";
         collector.prepareAdvertisement("targetedAds.txt", targetedUsers.trim(), adMessage);
 
         System.out.println("Targeted ads created for: " + targetedUsers.trim());

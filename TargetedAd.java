@@ -4,11 +4,11 @@ public class TargetedAd {
 
         DataCollector collector = new DataCollector();
         //uses big file in final verison, takes anyhting wolf or dog related 
-        collector.setData("socialMediaPosts.txt", "targetWords.txt");
+        collector.setData("socialMediaPosts.txt", "targetWords.txt"); // Gets the key words and phrases realting to wolf 
 
         
-        String targetedUsers = "";
-        String post = collector.getNextPost();
+        String targetedUsers = ""; // Empty String - Used for the Targeted People in it 
+        String post = collector.getNextPost(); // Gets the posrt  
 
         while (!post.equals("NONE")) {
 

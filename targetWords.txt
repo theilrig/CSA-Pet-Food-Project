@@ -7,7 +7,7 @@ canis-lupus
 territorial
 pup
 pup-rearing
-dog
+fang
 howl
 rendezvous-site
 pelt
@@ -16,7 +16,7 @@ wildlife
 fear
 predation
 tracking
-animal
+lupin
 muzzle
 howl-frequency
 treats

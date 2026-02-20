@@ -1,6 +1,0 @@
-classicalGuy "Florida here we come! Hoping to visit a wolf sanctuary."
-janeIzC00l "Lots of fun here studying wolf behavior in the windy city!"
-pet_lover101 "Wolves are the best! I wish I could work with a whole pack of them."
-always_an_adventure "I can't believe you forgot to visit the wolf reserve with me."
-thestarsareouttonight "Congratulations on adopting that rescued wolf pup!"
-painted_mountain "Trouble in paradise, it's raining hard at the wolf conservation site."

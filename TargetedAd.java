@@ -1,12 +1,17 @@
 public class TargetedAd {
 
-
-    
     public static void main(String[] args) {
 
         DataCollector collector = new DataCollector();
+        // Uses small file to develop and test out thealgorithm
         collector.setData("socialMediaPostsSmall.txt", "targetWords.txt");
+         /*
+         * STEP 6: 
+         * After checking the algorithm works correctly with  "socialMediaPostsSmall.txt", change the line above to: collector.setData("socialMediaPosts.txt", "targetWords.txt");
+         * This will run the same algorithm on the full dataset
+         */
 
+        
         String targetedUsers = "";
         String post = collector.getNextPost();
 

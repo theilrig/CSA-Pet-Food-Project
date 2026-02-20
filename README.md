@@ -1,6 +1,6 @@
 # Task List   
 
-Steps 1,6 - Rushil   
+Steps 4  - Rushil   
 Step 3,4 - Rohan S  
-Testing and Code Fixing and Step 5 - Shaurya  
+Step 1-3 5 - Shaurya  
 
